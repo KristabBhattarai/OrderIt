@@ -191,4 +191,4 @@ app.post("/dblwebhook", webhook.middleware(), async (req, res) => {
 
 //Start the Bot
 client.login(process.env.token);
-app.listen(3000);
+app.listen(process.env.PORT || 3000);
